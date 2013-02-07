@@ -1,6 +1,13 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+target/**
+bin/**
+doc/**
+gen/**
+.DS_Store
+Thumbs.db
+gdb.setup
+gdbserver
+.svn
+.hg
+local.properties
+.settings
+AndEnginePhysicsBox2DExtension.iml
