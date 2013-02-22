@@ -9,9 +9,9 @@ public class CGRect {
 		size = new CGSize(w, h);
 	}
 
-	public boolean containsPoint(CGPoint p) {
-		float xx = p.x - origin.x;
-		float yy = p.y - origin.y;
+	public boolean containsPoint(float x, float y) {
+		float xx = x - origin.x;
+		float yy = y - origin.y;
 		return ((xx >= 0) && (xx <= size.width))
 				&& ((yy >= 0) && (yy <= size.height));
 	}
