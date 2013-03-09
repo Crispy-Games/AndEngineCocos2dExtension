@@ -1,6 +1,8 @@
 package com.andengine.extension.cocos2d;
 
 public class CGRect {
+	public static final CGRect ZERO = new CGRect(0, 0, 0, 0);
+	
 	public final CGPoint origin;
 	public final CGSize size;
 	

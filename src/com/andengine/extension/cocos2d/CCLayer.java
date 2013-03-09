@@ -10,7 +10,7 @@ public abstract class CCLayer extends CCNode {
 	private boolean isAccelerometerEnabled;
 	
 	private boolean handlingTouch;
-	
+		
 	public CCLayer() {
 		super(0, 0, 480, 800);
 		setAnchorCenter(0, 0);

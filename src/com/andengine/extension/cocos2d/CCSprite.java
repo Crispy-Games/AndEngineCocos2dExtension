@@ -2,6 +2,7 @@ package com.andengine.extension.cocos2d;
 
 import java.io.IOException;
 
+import org.andengine.entity.modifier.IEntityModifier;
 import org.andengine.entity.sprite.Sprite;
 import org.andengine.opengl.texture.TextureOptions;
 import org.andengine.opengl.texture.region.TextureRegionFactory;
@@ -17,5 +18,9 @@ public class CCSprite extends Sprite {
 
 	public CCSprite(String file) throws IOException {
 		this(CCDirector.sharedInstance().getApp(), file);
+	}
+	
+	public void runAction(IEntityModifier modifier) {
+		registerEntityModifier(modifier);		
 	}
 }

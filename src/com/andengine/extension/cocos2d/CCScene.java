@@ -39,4 +39,10 @@ public class CCScene extends Scene {
 			internalOnExit(child.getChildByIndex(c));
 		}
 	}
+	
+	public static CCScene sceneWithLayer(CCLayer layer) {
+		CCScene scene = new CCScene();
+		scene.attachChild(layer);
+		return scene;
+	}
 }
