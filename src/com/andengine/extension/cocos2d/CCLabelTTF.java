@@ -14,7 +14,7 @@ public class CCLabelTTF extends Text {
 
 	public CCLabelTTF(float pX, float pY, IFont pFont, CharSequence pText,
 			VertexBufferObjectManager pVertexBufferObjectManager) {
-		super(pX, pY, pFont, pText, pVertexBufferObjectManager);
+		super(pX, pY, pFont, pText, 100, pVertexBufferObjectManager);
 	}
 
 	public static CCLabelTTF create(String text, float fontSize, int color) {
