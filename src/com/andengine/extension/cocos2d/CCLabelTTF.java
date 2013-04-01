@@ -17,15 +17,16 @@ public class CCLabelTTF extends Text {
 		super(pX, pY, pFont, pText, 100, pVertexBufferObjectManager);
 	}
 
-	public static CCLabelTTF create(String text, float fontSize, int color) {
+	public static CCLabelTTF create(String text, String fontFamily, float fontSize, int color) {
 		BaseGameActivity app = CCDirector.sharedInstance().getApp();
 		Engine engine = CCDirector.sharedInstance().getEngine();
 		IFont font = app.getFontManager().getMappedFont(
 				"font_" + fontSize + "_" + color);
 		if (font == null) {
+			
 			font = FontFactory.create(app.getFontManager(), app.getTextureManager(),
 					256, 256, TextureOptions.BILINEAR_PREMULTIPLYALPHA,
-					Typeface.create(Typeface.DEFAULT, Typeface.NORMAL),
+					Typeface.create(fontFamily, Typeface.BOLD),
 					fontSize, true, color);
 			font.load();
 			app.getFontManager().addMappedFont(

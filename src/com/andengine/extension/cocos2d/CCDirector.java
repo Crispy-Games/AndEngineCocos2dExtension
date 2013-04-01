@@ -30,8 +30,7 @@ public class CCDirector {
 	
 	public void setApp(BaseGameActivity app) {
 		this.mApp = app;
-		Display d = app.getWindowManager().getDefaultDisplay();
-		winSize = new CGSize(d.getWidth(), d.getHeight());
+		winSize = new CGSize(480, 800);
 	}
 	
 	public Engine getEngine() {
